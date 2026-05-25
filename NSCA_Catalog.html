@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NSCA Historical Archive Catalog</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap');
+
+  :root {
+    --cream: #f5f0e8;
+    --parchment: #e8e0cc;
+    --ink: #1a1410;
+    --sepia: #5c3d1e;
+    --rust: #9b3a1a;
+    --gold: #c5952a;
+    --muted: #7a6a55;
+    --card-bg: #faf7f2;
+    --border: #d4c9b0;
+    --shadow: rgba(26, 20, 16, 0.12);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    min-height: 100vh;
+  }
+
+  /* ── Header ── */
+  header {
+    background: var(--ink);
+    color: var(--cream);
+    padding: 28px 40px 24px;
+    display: flex;
+    align-items: flex-end;
+    gap: 32px;
+    border-bottom: 3px solid var(--gold);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .header-title { flex: 1; }
+  .header-eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 4px;
+  }
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+  }
+  header h1 span { font-style: italic; font-weight: 400; color: var(--parchment); }
+  .header-stats {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    text-align: right;
+    line-height: 1.8;
+  }
+  .header-stats strong { color: var(--cream); font-weight: 500; }
+  .header-version { font-size: 9px; opacity: 0.35; }
+
+  /* ── Toolbar ── */
+  .toolbar {
+    background: var(--parchment);
+    border-bottom: 1px solid var(--border);
+    padding: 14px 40px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .search-wrap {
+    position: relative;
+    flex: 1;
+    min-width: 200px;
+    max-width: 380px;
+  }
+  .search-wrap svg {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--muted);
+    pointer-events: none;
+  }
+  input[type="search"] {
+    width: 100%;
+    padding: 9px 12px 9px 36px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--card-bg);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 13px;
+    color: var(--ink);
+    outline: none;
+    transition: border-color 0.15s;
+  }
+  input[type="text"], input[type="number"], select, textarea {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--card-bg);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 13px;
+    color: var(--ink);
+    outline: none;
+    transition: border-color 0.15s;
+  }
+  input:focus, select:focus, textarea:focus { border-color: var(--rust); }
+  select { cursor: pointer; min-width: 140px; }
+  .toolbar-sep { width: 1px; height: 28px; background: var(--border); }
+  .view-toggle { display: flex; gap: 4px; }
+  .view-btn {
+    width: 34px; height: 34px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--card-bg);
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--muted);
+    transition: all 0.15s;
+  }
+  .view-btn:hover, .view-btn.active {
+    background: var(--ink);
+    color: var(--cream);
+    border-color: var(--ink);
+  }
+  .btn {
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .btn-primary { background: var(--rust); color: white; }
+  .btn-primary:hover { background: #7a2c12; }
+  .btn-secondary { background: transparent; color: var(--sepia); border: 1px solid var(--border); }
+  .btn-secondary:hover { background: var(--ink); color: var(--cream); border-color: var(--ink); }
+  .btn-gold { background: var(--gold); color: var(--ink); }
+  .btn-gold:hover { background: #a87a1f; }
+
+  /* ── Main ── */
+  .main {
+    padding: 28px 40px 60px;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  .result-meta {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    padding: 0 0 16px;
+  }
+  .result-meta span { color: var(--sepia); font-weight: 500; }
+
+  /* ── Grid ── */
+  .catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  /* ── List ── */
+  .catalog-list { display: flex; flex-direction: column; gap: 2px; }
+  .list-row {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 12px 20px;
+    display: grid;
+    grid-template-columns: 48px 1fr 80px 160px 200px 80px;
+    gap: 12px;
+    align-items: center;
+    cursor: pointer;
+    transition: border-color 0.12s, background 0.12s;
+  }
+  .list-row:hover { border-color: var(--gold); background: #fdfbf6; }
+  .list-ext { text-align: center; }
+  .list-name { font-size: 13px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .list-year { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--gold); text-align: center; }
+  .list-folder { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .list-desc { font-size: 12px; color: var(--muted); font-style: italic; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .list-actions { display: flex; gap: 6px; justify-content: flex-end; }
+  .list-edit-btn {
+    width: 26px; height: 26px;
+    border-radius: 3px;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.12s;
+  }
+  .list-edit-btn:hover { background: var(--rust); color: white; border-color: var(--rust); }
+
+  /* ── Card ── */
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+    position: relative;
+  }
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px var(--shadow);
+    border-color: var(--gold);
+  }
+  .card-thumb {
+    height: 160px;
+    background: var(--parchment);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+  }
+  .card-thumb img { width: 100%; height: 100%; object-fit: cover; }
+  .card-thumb-icon {
+    display: flex; flex-direction: column; align-items: center; gap: 8px;
+    color: var(--muted);
+  }
+  .ext-badge {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: var(--ink);
+    color: var(--cream);
+    padding: 2px 8px;
+    border-radius: 2px;
+    display: inline-block;
+  }
+  .ext-badge.pdf { background: var(--rust); }
+  .ext-badge.doc, .ext-badge.docx { background: #1a478a; }
+  .ext-badge.wpd { background: var(--sepia); }
+  .ext-badge.zip { background: #2a5a1a; }
+  .ext-badge.jpg, .ext-badge.jpeg, .ext-badge.png,
+  .ext-badge.heic, .ext-badge.tif, .ext-badge.tiff { background: var(--gold); color: var(--ink); }
+
+  /* PDF hover preview */
+  .pdf-hover-overlay {
+    position: absolute; inset: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    background: var(--parchment);
+    z-index: 2;
+  }
+  .pdf-hover-overlay iframe { width: 100%; height: 100%; border: none; display: block; }
+  .card:hover .pdf-hover-overlay { opacity: 1; }
+
+  .card-edit-btn {
+    position: absolute;
+    top: 8px; right: 8px;
+    width: 28px; height: 28px;
+    border-radius: 4px;
+    background: rgba(26,20,16,0.7);
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s;
+    z-index: 3;
+  }
+  .card:hover .card-edit-btn { display: flex; }
+  .card-edit-btn:hover { background: var(--rust); }
+
+  .card-body { padding: 14px 16px 16px; }
+  .card-year {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .card-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 6px;
+    word-break: break-word;
+  }
+  .card-desc { font-size: 12px; color: var(--muted); line-height: 1.5; font-style: italic; min-height: 18px; }
+  .card-folder {
+    margin-top: 10px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+    padding-top: 8px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+
+  /* ── Empty / No results ── */
+  .empty { text-align: center; padding: 80px 40px; color: var(--muted); }
+  .empty h2 { font-family: 'Playfair Display', serif; font-size: 22px; margin-bottom: 12px; color: var(--sepia); }
+  .empty p { font-size: 14px; line-height: 1.6; }
+  .no-results { text-align: center; padding: 60px 40px; color: var(--muted); font-family: 'Playfair Display', serif; font-size: 18px; font-style: italic; }
+
+  /* ── Modal shared ── */
+  .modal-overlay {
+    position: fixed; inset: 0;
+    background: rgba(26,20,16,0.7);
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    backdrop-filter: blur(3px);
+  }
+  .modal-overlay.open { display: flex; }
+  .modal-close {
+    width: 32px; height: 32px;
+    border-radius: 4px;
+    background: rgba(255,255,255,0.1);
+    border: none;
+    color: var(--cream);
+    cursor: pointer;
+    font-size: 18px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    transition: background 0.12s;
+  }
+  .modal-close:hover { background: var(--rust); }
+  .form-group { display: flex; flex-direction: column; gap: 5px; }
+  .form-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 500;
+  }
+  textarea { resize: vertical; min-height: 80px; line-height: 1.5; }
+
+  /* ── Edit modal ── */
+  .edit-modal {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 860px;
+    max-height: 90vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 20px 60px rgba(26,20,16,0.4);
+  }
+  .edit-modal-header {
+    padding: 20px 24px 16px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background: var(--ink);
+    color: var(--cream);
+    flex-shrink: 0;
+  }
+  .edit-modal-header-text { flex: 1; min-width: 0; }
+  .modal-eyebrow { font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 4px; }
+  .modal-title { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 600; word-break: break-word; line-height: 1.2; }
+  .edit-modal-body { display: grid; grid-template-columns: 1fr 340px; overflow: hidden; flex: 1; }
+  .modal-preview {
+    background: var(--parchment);
+    border-right: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+    min-height: 300px;
+    padding: 20px;
+  }
+  .modal-preview img { max-width: 100%; max-height: 100%; object-fit: contain; }
+  .modal-preview iframe { width: 100%; height: 100%; border: none; }
+  .modal-preview-placeholder {
+    display: flex; flex-direction: column;
+    align-items: center; gap: 12px;
+    color: var(--muted); text-align: center;
+  }
+  .modal-preview-placeholder p { font-size: 12px; line-height: 1.5; max-width: 200px; }
+  .modal-preview-placeholder .open-link {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: var(--sepia);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .modal-preview-placeholder .open-link:hover { background: var(--rust); }
+  .form-path {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    background: var(--parchment);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 8px 10px;
+    line-height: 1.5;
+    word-break: break-all;
+  }
+  .modal-form { padding: 20px 24px; overflow-y: auto; display: flex; flex-direction: column; gap: 16px; }
+  .modal-footer {
+    padding: 16px 24px;
+    border-top: 1px solid var(--border);
+    display: flex; gap: 10px; justify-content: flex-end;
+    background: var(--parchment);
+    flex-shrink: 0;
+  }
+
+  /* ── Small modals (Add, IO) ── */
+  .small-modal {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 520px;
+    box-shadow: 0 20px 60px rgba(26,20,16,0.4);
+    overflow: hidden;
+  }
+  .small-modal-header {
+    padding: 20px 24px;
+    background: var(--ink);
+    color: var(--cream);
+    display: flex; align-items: center; gap: 12px;
+  }
+  .small-modal-title { flex: 1; font-family: 'Playfair Display', serif; font-size: 18px; }
+  .small-modal-body { padding: 24px; display: flex; flex-direction: column; gap: 16px; }
+  .small-modal-body p { font-size: 13px; color: var(--muted); line-height: 1.6; }
+  .small-modal-footer {
+    padding: 16px 24px;
+    border-top: 1px solid var(--border);
+    display: flex; gap: 10px; justify-content: flex-end;
+    background: var(--parchment);
+  }
+
+  /* IO modal wider */
+  .io-modal { max-width: 600px; }
+  .io-modal-footer { justify-content: space-between; }
+
+  /* Drop zone */
+  .drop-zone {
+    border: 2px dashed var(--border);
+    border-radius: 6px;
+    padding: 32px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.15s;
+    color: var(--muted);
+  }
+  .drop-zone:hover, .drop-zone.dragover { border-color: var(--rust); background: #fdf5f0; }
+  .drop-zone p { font-size: 13px; margin-top: 8px; }
+
+  /* ── Status bar ── */
+  .status-bar {
+    position: fixed;
+    bottom: 20px; left: 50%;
+    transform: translateX(-50%) translateY(80px);
+    background: var(--ink);
+    color: var(--cream);
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    z-index: 9999;
+    pointer-events: none;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .status-bar.show { transform: translateX(-50%) translateY(0); }
+  .status-bar.success::before { content: '✓'; color: #6dbe6d; }
+  .status-bar.error::before { content: '✗'; color: #e05c5c; }
+  .status-bar.info::before { content: 'ℹ'; color: var(--gold); }
+
+  @media (max-width: 700px) {
+    header { padding: 20px 20px 16px; }
+    .toolbar { padding: 12px 20px; }
+    .main { padding: 20px 20px 60px; }
+    .catalog-grid { grid-template-columns: 1fr 1fr; }
+    .edit-modal-body { grid-template-columns: 1fr; }
+    .modal-preview { border-right: none; border-bottom: 1px solid var(--border); min-height: 200px; }
+    .list-row { grid-template-columns: 40px 1fr 60px 60px; }
+    .list-folder, .list-desc, .list-actions { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-title">
+    <div class="header-eyebrow">Niguel Shores Community Association</div>
+    <h1>Historical Archive <span>Catalog</span></h1>
+  </div>
+  <div class="header-stats">
+    <strong id="statTotal">0</strong> files cataloged<br>
+    <strong id="statTagged">0</strong> with metadata<br>
+    <span class="header-version">v2.0</span>
+  </div>
+</header>
+
+<div class="toolbar">
+  <div class="search-wrap">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+    </svg>
+    <input type="search" id="searchInput" placeholder="Search files, descriptions, folders…">
+  </div>
+  <select id="yearFilter"><option value="">All Years</option></select>
+  <select id="folderFilter"><option value="">All Folders</option></select>
+  <select id="typeFilter">
+    <option value="">All Types</option>
+    <option value="image">Images</option>
+    <option value="pdf">PDFs</option>
+    <option value="doc">Documents</option>
+    <option value="zip">Archives</option>
+    <option value="other">Other</option>
+  </select>
+  <div class="toolbar-sep"></div>
+  <div class="view-toggle">
+    <button class="view-btn active" id="gridViewBtn" title="Grid view" onclick="setView('grid')">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+    </button>
+    <button class="view-btn" id="listViewBtn" title="List view" onclick="setView('list')">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="toolbar-sep"></div>
+  <button class="btn btn-primary" onclick="openAddModal()">+ Add File</button>
+  <button class="btn btn-secondary" onclick="openIOModal()">Import / Export</button>
+  <button class="btn btn-gold" onclick="downloadJSON()">Save JSON</button>
+</div>
+
+<div class="main">
+  <div class="result-meta" id="resultMeta"></div>
+  <div id="catalogContainer"></div>
+</div>
+
+<!-- Edit Modal -->
+<div class="modal-overlay" id="editModalOverlay">
+  <div class="edit-modal">
+    <div class="edit-modal-header">
+      <div class="edit-modal-header-text">
+        <div class="modal-eyebrow" id="editModalEyebrow">Edit Record</div>
+        <div class="modal-title" id="editModalTitle"></div>
+      </div>
+      <button class="modal-close" onclick="closeEditModal()">✕</button>
+    </div>
+    <div class="edit-modal-body">
+      <div class="modal-preview" id="editModalPreview"></div>
+      <div class="modal-form">
+        <div class="form-group">
+          <label class="form-label">File Path</label>
+          <div class="form-path" id="editPathDisplay"></div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Folder</label>
+          <input type="text" id="editFolder" placeholder="e.g. Historical -NS">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Year</label>
+          <input type="text" id="editYear" placeholder="e.g. 1985 or c.1975 or 1980s">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Descriptor / Notes</label>
+          <textarea id="editDescriptor" placeholder="Describe the content, context, subjects, or significance…"></textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Tags (comma-separated)</label>
+          <input type="text" id="editTags" placeholder="e.g. July 4th, parade, community event">
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-secondary" onclick="closeEditModal()">Cancel</button>
+      <button class="btn btn-primary" onclick="saveEdit()">Save Changes</button>
+    </div>
+  </div>
+</div>
+
+<!-- Add File Modal -->
+<div class="modal-overlay" id="addModalOverlay">
+  <div class="small-modal">
+    <div class="small-modal-header">
+      <div class="small-modal-title">Add File Record</div>
+      <button class="modal-close" onclick="closeAddModal()">✕</button>
+    </div>
+    <div class="small-modal-body">
+      <p>Enter the file path relative to your Dropbox folder.</p>
+      <div class="form-group">
+        <label class="form-label">File Path</label>
+        <input type="text" id="addFilePath" placeholder="e.g. Historical -NS/1969-009.pdf">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Folder</label>
+        <input type="text" id="addFolder" placeholder="Auto-filled from path, or override">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Year</label>
+        <input type="text" id="addYear" placeholder="e.g. 1985 or c.1975">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Descriptor / Notes</label>
+        <textarea id="addDescriptor" placeholder="Describe the content…" style="min-height:60px;"></textarea>
+      </div>
+    </div>
+    <div class="small-modal-footer">
+      <button class="btn btn-secondary" onclick="closeAddModal()">Cancel</button>
+      <button class="btn btn-primary" onclick="confirmAdd()">Add Record</button>
+    </div>
+  </div>
+</div>
+
+<!-- Import / Export Modal -->
+<div class="modal-overlay" id="ioModalOverlay">
+  <div class="small-modal io-modal">
+    <div class="small-modal-header">
+      <div class="small-modal-title">Import &amp; Export</div>
+      <button class="modal-close" onclick="closeIOModal()">✕</button>
+    </div>
+    <div class="small-modal-body">
+      <div>
+        <div class="form-label" style="margin-bottom:8px;">Export catalog as JSON</div>
+        <p style="margin-bottom:10px;">Downloads <code style="font-family:monospace;font-size:12px;">nsca_catalog.json</code> — upload this to GitHub to update the live catalog.</p>
+        <button class="btn btn-gold" onclick="downloadJSON()">↓ Download nsca_catalog.json</button>
+      </div>
+      <div>
+        <div class="form-label" style="margin-bottom:8px;">Import from JSON or CSV</div>
+        <div class="drop-zone" id="dropZone" onclick="document.getElementById('importFile').click()">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17,8 12,3 7,8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          <p>Drop a JSON or CSV file here, or click to browse</p>
+          <input type="file" id="importFile" accept=".json,.csv" style="display:none" onchange="handleFileImport(event)">
+        </div>
+        <p style="margin-top:8px;font-size:11px;">CSV columns: <code style="font-family:monospace;">path, folder, year, descriptor, tags</code></p>
+      </div>
+      <div>
+        <div class="form-label" style="margin-bottom:8px;">Bulk-add from file list</div>
+        <p style="margin-bottom:8px;">Paste file paths (one per line) to create skeleton records in bulk.</p>
+        <textarea id="bulkPaths" placeholder="Paste file paths here, one per line…" style="min-height:90px;font-family:monospace;font-size:11px;"></textarea>
+        <button class="btn btn-secondary" style="margin-top:8px;" onclick="bulkAddPaths()">Add Paths as Skeletons</button>
+      </div>
+    </div>
+    <div class="small-modal-footer io-modal-footer">
+      <span style="font-size:11px;color:var(--muted);font-family:monospace;" id="ioCount"></span>
+      <button class="btn btn-secondary" onclick="closeIOModal()">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- Status bar -->
+<div class="status-bar" id="statusBar"></div>
+
+<script>
+// ─── Version ────────────────────────────────────────────────────────────────
+const VERSION = 'v2.0';
+
+// ─── Constants ──────────────────────────────────────────────────────────────
+const IMAGE_EXTS = ['jpg','jpeg','png','gif','webp','heic','tiff','tif','bmp'];
+const PDF_EXTS   = ['pdf'];
+const DOC_EXTS   = ['doc','docx','wpd','wbk','odt','txt','rtf'];
+const ZIP_EXTS   = ['zip','7z','tar','gz'];
+
+// URL for nsca_catalog.json — set to Dropbox raw link or GitHub raw URL.
+// Leave empty to use only localStorage (for offline/local use).
+const JSON_URL = 'https://www.dropbox.com/scl/fi/517m5g6ot68t8px3bwo6z/nsca_catalog.json?rlkey=z5tesjtr38in1hm8lzzhduwkr&raw=1';
+
+// ─── State ──────────────────────────────────────────────────────────────────
+let catalog = [];
+let currentView = 'grid';
+let editingIndex = null;
+
+// ─── Pure helpers ────────────────────────────────────────────────────────────
+function ext(path) {
+  return (path || '').split('.').pop().toLowerCase().replace(/[^a-z0-9]/g, '');
+}
+function basename(path) {
+  return (path || '').split('/').pop();
+}
+function guessFolder(path) {
+  const parts = path.split('/');
+  return parts.length > 1 ? parts.slice(0, -1).join('/') : '';
+}
+function uniqueId() {
+  return Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+}
+function esc(s) {
+  return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+function fileTypeGroup(path) {
+  const e = ext(path);
+  if (IMAGE_EXTS.includes(e)) return 'image';
+  if (PDF_EXTS.includes(e))   return 'pdf';
+  if (DOC_EXTS.includes(e))   return 'doc';
+  if (ZIP_EXTS.includes(e))   return 'zip';
+  return 'other';
+}
+
+// ─── Boot ────────────────────────────────────────────────────────────────────
+window.addEventListener('DOMContentLoaded', async () => {
+  await loadCatalog();
+  render();
+  setupDropZone();
+});
+
+async function loadCatalog() {
+  // 1. Try configured JSON_URL (Dropbox or GitHub raw link)
+  if (JSON_URL) {
+    try {
+      const res = await fetch(JSON_URL);
+      if (res.ok) { catalog = await res.json(); return; }
+    } catch(e) {}
+  }
+  // 2. Try same-directory fetch (works on GitHub Pages / localhost)
+  try {
+    const res = await fetch('./nsca_catalog.json');
+    if (res.ok) { catalog = await res.json(); return; }
+  } catch(e) {}
+  // 3. Fall back to localStorage
+  try {
+    const raw = localStorage.getItem('nsca_catalog');
+    if (raw) catalog = JSON.parse(raw);
+  } catch(e) {}
+}
+
+function saveToStorage() {
+  try { localStorage.setItem('nsca_catalog', JSON.stringify(catalog)); } catch(e) {}
+}
+
+// ─── Filters ─────────────────────────────────────────────────────────────────
+function getFiltered() {
+  const q      = document.getElementById('searchInput').value.trim().toLowerCase();
+  const year   = document.getElementById('yearFilter').value;
+  const folder = document.getElementById('folderFilter').value;
+  const type   = document.getElementById('typeFilter').value;
+  return catalog.filter(r => {
+    if (q      && !JSON.stringify(r).toLowerCase().includes(q)) return false;
+    if (year   && r.year !== year)   return false;
+    if (folder && r.folder !== folder) return false;
+    if (type   && fileTypeGroup(r.path) !== type) return false;
+    return true;
+  });
+}
+
+function populateFilters() {
+  const years   = [...new Set(catalog.map(r => r.year).filter(Boolean))].sort();
+  const folders = [...new Set(catalog.map(r => r.folder).filter(Boolean))].sort();
+  const yf = document.getElementById('yearFilter');
+  const ff = document.getElementById('folderFilter');
+  const yv = yf.value, fv = ff.value;
+  yf.innerHTML = '<option value="">All Years</option>'   + years.map(y   => `<option value="${esc(y)}">${esc(y)}</option>`).join('');
+  ff.innerHTML = '<option value="">All Folders</option>' + folders.map(f => `<option value="${esc(f)}">${esc(f)}</option>`).join('');
+  yf.value = yv; ff.value = fv;
+}
+
+// ─── Render ──────────────────────────────────────────────────────────────────
+function render() {
+  populateFilters();
+  updateStats();
+  const filtered  = getFiltered();
+  const container = document.getElementById('catalogContainer');
+  const meta      = document.getElementById('resultMeta');
+
+  if (catalog.length === 0) {
+    container.innerHTML = `<div class="empty">
+      <h2>No files cataloged yet</h2>
+      <p>Click <strong>"+ Add File"</strong> to add records one at a time,<br>
+      or use <strong>Import / Export → Bulk-add</strong> to paste a file list all at once.</p>
+    </div>`;
+    meta.innerHTML = '';
+    return;
+  }
+
+  meta.innerHTML = `Showing <span>${filtered.length}</span> of <span>${catalog.length}</span> records`;
+
+  if (filtered.length === 0) {
+    container.innerHTML = `<div class="no-results">No files match the current filters.</div>`;
+    return;
+  }
+
+  if (currentView === 'grid') {
+    container.innerHTML = `<div class="catalog-grid">${filtered.map(r => renderCard(r, catalog.indexOf(r))).join('')}</div>`;
+  } else {
+    container.innerHTML = `<div class="catalog-list">${filtered.map(r => renderRow(r, catalog.indexOf(r))).join('')}</div>`;
+  }
+}
+
+function updateStats() {
+  const total  = catalog.length;
+  const tagged = catalog.filter(r => r.descriptor || r.year).length;
+  document.getElementById('statTotal').textContent  = total.toLocaleString();
+  document.getElementById('statTagged').textContent = tagged.toLocaleString();
+}
+
+// ─── Card rendering ───────────────────────────────────────────────────────────
+const ICONS = {
+  pdf:   `<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>`,
+  image: `<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>`,
+  zip:   `<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>`,
+  doc:   `<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>`,
+  other: `<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><polyline points="13 2 13 9 20 9"/></svg>`
+};
+
+function badgeClass(path) {
+  const e = ext(path);
+  return IMAGE_EXTS.includes(e) ? 'jpg' : e;
+}
+
+function renderIconHTML(record) {
+  const tg = fileTypeGroup(record.path);
+  const e  = ext(record.path) || '?';
+  return `<div class="card-thumb-icon">${ICONS[tg] || ICONS.other}<span class="ext-badge ${badgeClass(record.path)}">${e}</span></div>`;
+}
+
+function renderThumb(record) {
+  const tg = fileTypeGroup(record.path);
+  // Image with a previewUrl: show inline
+  if (tg === 'image' && record.previewUrl) {
+    return `<img src="${esc(record.previewUrl)}" alt="${esc(basename(record.path))}" onerror="this.parentElement.innerHTML=\`${renderIconHTML(record)}\`">`;
+  }
+  // PDF with a previewUrl: show hover overlay
+  if (tg === 'pdf' && record.previewUrl) {
+    return `${renderIconHTML(record)}
+    <div class="pdf-hover-overlay"><iframe src="${esc(record.previewUrl)}" loading="lazy" tabindex="-1"></iframe></div>`;
+  }
+  return renderIconHTML(record);
+}
+
+function renderCard(record, idx) {
+  const name   = basename(record.path);
+  const folder = record.folder || guessFolder(record.path) || 'Root';
+  return `<div class="card" onclick="openEdit(${idx})">
+    <button class="card-edit-btn" onclick="event.stopPropagation();openEdit(${idx})" title="Edit metadata">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+    </button>
+    <div class="card-thumb">${renderThumb(record)}</div>
+    <div class="card-body">
+      <div class="card-year">${esc(record.year || 'Year unknown')}</div>
+      <div class="card-name">${esc(name)}</div>
+      <div class="card-desc">${esc(record.descriptor || '')}</div>
+      <div class="card-folder">📁 ${esc(folder)}</div>
+    </div>
+  </div>`;
+}
+
+function renderRow(record, idx) {
+  const name = basename(record.path);
+  const e    = ext(record.path) || '?';
+  return `<div class="list-row" onclick="openEdit(${idx})">
+    <div class="list-ext"><span class="ext-badge ${badgeClass(record.path)}">${e}</span></div>
+    <div class="list-name" title="${esc(record.path)}">${esc(name)}</div>
+    <div class="list-year">${esc(record.year || '—')}</div>
+    <div class="list-folder" title="${esc(record.folder)}">${esc(record.folder || '—')}</div>
+    <div class="list-desc">${esc(record.descriptor || '')}</div>
+    <div class="list-actions">
+      <button class="list-edit-btn" onclick="event.stopPropagation();openEdit(${idx})" title="Edit">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+      </button>
+    </div>
+  </div>`;
+}
+
+// ─── View toggle ──────────────────────────────────────────────────────────────
+function setView(v) {
+  currentView = v;
+  document.getElementById('gridViewBtn').classList.toggle('active', v === 'grid');
+  document.getElementById('listViewBtn').classList.toggle('active', v === 'list');
+  render();
+}
+
+// ─── Edit modal ───────────────────────────────────────────────────────────────
+function openEdit(idx) {
+  editingIndex = idx;
+  const r = catalog[idx];
+  document.getElementById('editModalEyebrow').textContent = 'Edit Record — ' + ext(r.path).toUpperCase();
+  document.getElementById('editModalTitle').textContent   = basename(r.path);
+  document.getElementById('editPathDisplay').textContent  = r.path;
+  document.getElementById('editFolder').value      = r.folder || '';
+  document.getElementById('editYear').value        = r.year || '';
+  document.getElementById('editDescriptor').value  = r.descriptor || '';
+  document.getElementById('editTags').value        = (r.tags || []).join(', ');
+  renderPreview(r);
+  document.getElementById('editModalOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function renderPreview(record) {
+  const preview = document.getElementById('editModalPreview');
+  const tg      = fileTypeGroup(record.path);
+  const url     = record.previewUrl;
+
+  if (url && tg === 'image') {
+    preview.innerHTML = `<img src="${esc(url)}" alt="${esc(basename(record.path))}" style="max-height:400px;">`;
+  } else if (url && tg === 'pdf') {
+    preview.innerHTML = `<iframe src="${esc(url)}" title="${esc(basename(record.path))}"></iframe>`;
+  } else if (url) {
+    preview.innerHTML = `<div class="modal-preview-placeholder">
+      ${renderIconHTML(record)}
+      <p>No in-browser preview for this format.</p>
+      <a class="open-link" href="${esc(url)}" target="_blank">Open file</a>
+    </div>`;
+  } else {
+    preview.innerHTML = `<div class="modal-preview-placeholder">
+      ${renderIconHTML(record)}
+      <p>No preview available.<br>Previews will appear once Dropbox shared links are added to the catalog.</p>
+    </div>`;
+  }
+}
+
+function closeEditModal() {
+  document.getElementById('editModalOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+  editingIndex = null;
+}
+
+function saveEdit() {
+  if (editingIndex === null) return;
+  const r = catalog[editingIndex];
+  r.folder     = document.getElementById('editFolder').value.trim();
+  r.year       = document.getElementById('editYear').value.trim();
+  r.descriptor = document.getElementById('editDescriptor').value.trim();
+  r.tags       = document.getElementById('editTags').value.split(',').map(t => t.trim()).filter(Boolean);
+  r.updatedAt  = new Date().toISOString();
+  saveToStorage();
+  render();
+  closeEditModal();
+  showStatus('Record saved', 'success');
+}
+
+// ─── Add modal ────────────────────────────────────────────────────────────────
+function openAddModal() {
+  ['addFilePath','addFolder','addYear','addDescriptor'].forEach(id => document.getElementById(id).value = '');
+  document.getElementById('addModalOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  setTimeout(() => document.getElementById('addFilePath').focus(), 50);
+}
+function closeAddModal() {
+  document.getElementById('addModalOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.getElementById('addFilePath').addEventListener('input', function() {
+  const folderField = document.getElementById('addFolder');
+  if (!folderField.value) folderField.value = guessFolder(this.value.trim());
+});
+function confirmAdd() {
+  const path = document.getElementById('addFilePath').value.trim();
+  if (!path) { showStatus('Path is required', 'error'); return; }
+  catalog.push({
+    id: uniqueId(),
+    path,
+    folder:     document.getElementById('addFolder').value.trim() || guessFolder(path),
+    year:       document.getElementById('addYear').value.trim(),
+    descriptor: document.getElementById('addDescriptor').value.trim(),
+    tags: [],
+    createdAt: new Date().toISOString()
+  });
+  saveToStorage();
+  render();
+  closeAddModal();
+  showStatus('File record added', 'success');
+}
+
+// ─── Import / Export modal ────────────────────────────────────────────────────
+function openIOModal() {
+  document.getElementById('ioCount').textContent = `${catalog.length} records in catalog`;
+  document.getElementById('ioModalOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeIOModal() {
+  document.getElementById('ioModalOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function downloadJSON() {
+  const blob = new Blob([JSON.stringify(catalog, null, 2)], { type: 'application/json' });
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href = url; a.download = 'nsca_catalog.json';
+  a.click(); URL.revokeObjectURL(url);
+  showStatus('Downloaded nsca_catalog.json', 'success');
+}
+
+function handleFileImport(evt) {
+  const file = evt.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = e => {
+    try {
+      const imported = file.name.endsWith('.csv')
+        ? parseCSV(e.target.result)
+        : JSON.parse(e.target.result);
+      if (!Array.isArray(imported)) throw new Error('Expected an array of records');
+      let added = 0;
+      imported.forEach(r => {
+        if (!r.path) return;
+        if (!catalog.find(c => c.path === r.path)) {
+          catalog.push({ id: uniqueId(), createdAt: new Date().toISOString(), ...r });
+          added++;
+        }
+      });
+      saveToStorage();
+      render();
+      showStatus(`Imported ${added} new records`, 'success');
+      document.getElementById('ioCount').textContent = `${catalog.length} records in catalog`;
+    } catch(err) {
+      showStatus('Import failed: ' + err.message, 'error');
+    }
+  };
+  reader.readAsText(file);
+}
+
+function parseCSV(text) {
+  const lines   = text.trim().split('\n');
+  const headers = lines[0].split(',').map(h => h.trim().replace(/^"|"$/g, ''));
+  return lines.slice(1).map(line => {
+    const vals = line.split(',').map(v => v.trim().replace(/^"|"$/g, ''));
+    const obj  = {};
+    headers.forEach((h, i) => { if (vals[i] !== undefined) obj[h] = vals[i]; });
+    if (obj.tags) obj.tags = obj.tags.split(';').map(t => t.trim()).filter(Boolean);
+    return obj;
+  });
+}
+
+function bulkAddPaths() {
+  const raw = document.getElementById('bulkPaths').value.trim();
+  if (!raw) return;
+  let added = 0;
+  raw.split('\n').map(l => l.trim()).filter(Boolean).forEach(path => {
+    if (catalog.find(c => c.path === path)) return;
+    catalog.push({ id: uniqueId(), path, folder: guessFolder(path), year: '', descriptor: '', tags: [], createdAt: new Date().toISOString() });
+    added++;
+  });
+  saveToStorage();
+  render();
+  document.getElementById('bulkPaths').value = '';
+  document.getElementById('ioCount').textContent = `${catalog.length} records in catalog`;
+  showStatus(`Added ${added} skeleton records`, 'success');
+}
+
+// ─── Drop zone ────────────────────────────────────────────────────────────────
+function setupDropZone() {
+  const dz = document.getElementById('dropZone');
+  dz.addEventListener('dragover',  e => { e.preventDefault(); dz.classList.add('dragover'); });
+  dz.addEventListener('dragleave', ()  => dz.classList.remove('dragover'));
+  dz.addEventListener('drop', e => {
+    e.preventDefault(); dz.classList.remove('dragover');
+    const file = e.dataTransfer.files[0];
+    if (file) handleFileImport({ target: { files: [file] } });
+  });
+}
+
+// ─── Status bar ───────────────────────────────────────────────────────────────
+let statusTimer;
+function showStatus(msg, type = 'info') {
+  const bar = document.getElementById('statusBar');
+  bar.textContent = msg;
+  bar.className = `status-bar ${type} show`;
+  clearTimeout(statusTimer);
+  statusTimer = setTimeout(() => bar.classList.remove('show'), 3000);
+}
+
+// ─── Keyboard & click-outside ─────────────────────────────────────────────────
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') { closeEditModal(); closeAddModal(); closeIOModal(); }
+});
+['editModalOverlay','addModalOverlay','ioModalOverlay'].forEach(id => {
+  document.getElementById(id).addEventListener('click', e => {
+    if (e.target === e.currentTarget) {
+      document.getElementById(id).classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  });
+});
+
+// ─── Filter listeners ─────────────────────────────────────────────────────────
+['searchInput','yearFilter','folderFilter','typeFilter'].forEach(id => {
+  document.getElementById(id).addEventListener('input',  render);
+  document.getElementById(id).addEventListener('change', render);
+});
+</script>
+</body>
+</html>
