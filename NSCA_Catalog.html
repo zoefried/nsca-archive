@@ -67,7 +67,7 @@
     line-height: 1.8;
   }
   .header-stats strong { color: var(--cream); font-weight: 500; }
-  .header-version { font-size: 9px; opacity: 0.25; }
+  .header-version { font-size: 9px; color: white; opacity: 0.5; }
 
   /* ── Toolbar ── */
   .toolbar {
@@ -523,7 +523,7 @@
   <div class="header-stats">
     <strong id="statTotal">0</strong> files cataloged<br>
     <strong id="statTagged">0</strong> with metadata<br>
-    <span class="header-version">v2.2</span>
+    <span class="header-version">v2.3</span>
   </div>
 </header>
 
@@ -806,6 +806,7 @@ function render() {
 
   if (currentView === 'grid') {
     container.innerHTML = `<div class="catalog-grid">${filtered.map(r => renderCard(r, catalog.indexOf(r))).join('')}</div>`;
+    attachPdfHover(container);
   } else {
     container.innerHTML = `<div class="catalog-list">${filtered.map(r => renderRow(r, catalog.indexOf(r))).join('')}</div>`;
   }
@@ -1061,27 +1062,26 @@ function bulkAddPaths() {
   showStatus(`Added ${added} skeleton records`, 'success');
 }
 
-// ─── PDF hover — inject iframe only on mouseover ──────────────────────────
-document.addEventListener('mouseover', e => {
-  const overlay = e.target.closest('.pdf-hover-overlay');
-  if (overlay && overlay.dataset.src && !overlay.querySelector('iframe')) {
-    const iframe = document.createElement('iframe');
-    iframe.src = overlay.dataset.src;
-    iframe.style.cssText = 'width:100%;height:100%;border:none;display:block;';
-    iframe.tabIndex = -1;
-    overlay.appendChild(iframe);
-  }
-});
-document.addEventListener('mouseout', e => {
-  const overlay = e.target.closest('.pdf-hover-overlay');
-  if (overlay) {
-    const iframe = overlay.querySelector('iframe');
-    if (iframe) {
-      iframe.src = '';
-      overlay.removeChild(iframe);
-    }
-  }
-});
+// ─── PDF hover — inject iframe only on mouseenter ─────────────────────────
+function attachPdfHover(container) {
+  container.querySelectorAll('.card').forEach(card => {
+    const overlay = card.querySelector('.pdf-hover-overlay');
+    if (!overlay) return;
+    card.addEventListener('mouseenter', () => {
+      if (!overlay.querySelector('iframe')) {
+        const iframe = document.createElement('iframe');
+        iframe.src = overlay.dataset.src;
+        iframe.style.cssText = 'width:100%;height:100%;border:none;display:block;';
+        iframe.tabIndex = -1;
+        overlay.appendChild(iframe);
+      }
+    });
+    card.addEventListener('mouseleave', () => {
+      const iframe = overlay.querySelector('iframe');
+      if (iframe) { iframe.src = ''; overlay.removeChild(iframe); }
+    });
+  });
+}
 
 // ─── Drop zone ────────────────────────────────────────────────────────────────
 function setupDropZone() {
