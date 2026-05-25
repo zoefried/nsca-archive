@@ -523,7 +523,7 @@
   <div class="header-stats">
     <strong id="statTotal">0</strong> files cataloged<br>
     <strong id="statTagged">0</strong> with metadata<br>
-    <span class="header-version">v2.0</span>
+    <span class="header-version">v2.1</span>
   </div>
 </header>
 
@@ -688,9 +688,8 @@ const PDF_EXTS   = ['pdf'];
 const DOC_EXTS   = ['doc','docx','wpd','wbk','odt','txt','rtf'];
 const ZIP_EXTS   = ['zip','7z','tar','gz'];
 
-// URL for nsca_catalog.json — set to Dropbox raw link or GitHub raw URL.
-// Leave empty to use only localStorage (for offline/local use).
-const JSON_URL = 'https://www.dropbox.com/scl/fi/517m5g6ot68t8px3bwo6z/nsca_catalog.json?rlkey=z5tesjtr38in1hm8lzzhduwkr&raw=1';
+// URL for nsca_catalog.json — leave empty to load from same directory (recommended for GitHub Pages)
+const JSON_URL = '';
 
 // ─── State ──────────────────────────────────────────────────────────────────
 let catalog = [];
