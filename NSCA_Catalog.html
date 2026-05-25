@@ -67,7 +67,7 @@
     line-height: 1.8;
   }
   .header-stats strong { color: var(--cream); font-weight: 500; }
-  .header-version { font-size: 9px; opacity: 0.35; }
+  .header-version { font-size: 9px; opacity: 0.6; }
 
   /* ── Toolbar ── */
   .toolbar {
@@ -523,7 +523,7 @@
   <div class="header-stats">
     <strong id="statTotal">0</strong> files cataloged<br>
     <strong id="statTagged">0</strong> with metadata<br>
-    <span class="header-version">v2.1</span>
+    <span class="header-version">v2.2</span>
   </div>
 </header>
 
@@ -840,14 +840,12 @@ function renderIconHTML(record) {
 
 function renderThumb(record) {
   const tg = fileTypeGroup(record.path);
-  // Image with a previewUrl: show inline
   if (tg === 'image' && record.previewUrl) {
     return `<img src="${esc(record.previewUrl)}" alt="${esc(basename(record.path))}" onerror="this.parentElement.innerHTML=\`${renderIconHTML(record)}\`">`;
   }
-  // PDF with a previewUrl: show hover overlay
   if (tg === 'pdf' && record.previewUrl) {
-    return `${renderIconHTML(record)}
-    <div class="pdf-hover-overlay"><iframe src="${esc(record.previewUrl)}" loading="lazy" tabindex="-1"></iframe></div>`;
+    // Overlay div — iframe injected on hover via JS, not in initial HTML
+    return `${renderIconHTML(record)}<div class="pdf-hover-overlay" data-src="${esc(record.previewUrl)}"></div>`;
   }
   return renderIconHTML(record);
 }
@@ -1062,6 +1060,28 @@ function bulkAddPaths() {
   document.getElementById('ioCount').textContent = `${catalog.length} records in catalog`;
   showStatus(`Added ${added} skeleton records`, 'success');
 }
+
+// ─── PDF hover — inject iframe only on mouseover ──────────────────────────
+document.addEventListener('mouseover', e => {
+  const overlay = e.target.closest('.pdf-hover-overlay');
+  if (overlay && overlay.dataset.src && !overlay.querySelector('iframe')) {
+    const iframe = document.createElement('iframe');
+    iframe.src = overlay.dataset.src;
+    iframe.style.cssText = 'width:100%;height:100%;border:none;display:block;';
+    iframe.tabIndex = -1;
+    overlay.appendChild(iframe);
+  }
+});
+document.addEventListener('mouseout', e => {
+  const overlay = e.target.closest('.pdf-hover-overlay');
+  if (overlay) {
+    const iframe = overlay.querySelector('iframe');
+    if (iframe) {
+      iframe.src = '';
+      overlay.removeChild(iframe);
+    }
+  }
+});
 
 // ─── Drop zone ────────────────────────────────────────────────────────────────
 function setupDropZone() {
