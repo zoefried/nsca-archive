@@ -1,948 +1,898 @@
 [
   {
-    "id": "36fd6bed",
-    "path": "Historical -NS/1969-009.pdf",
-    "folder": "Historical -NS",
-    "year": "1969",
-    "descriptor": "",
-    "tags": [],
-    "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/1969-009.jpg"
-  },
-  {
-    "id": "0b68dde4",
-    "path": "Historical -NS/1991 1d. 1e .pdf",
-    "folder": "Historical -NS",
-    "year": "1991",
-    "descriptor": "",
-    "tags": [],
-    "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/1991 1d. 1e .jpg"
-  },
-  {
-    "id": "3e0dbad5",
-    "path": "Historical -NS/1991.1.pdf",
-    "folder": "Historical -NS",
-    "year": "1991",
-    "descriptor": "",
-    "tags": [],
-    "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/1991.1.jpg"
-  },
-  {
-    "id": "5706bd9b",
-    "path": "Historical -NS/1991.1a.1b.1c.pdf",
-    "folder": "Historical -NS",
-    "year": "1991",
-    "descriptor": "",
-    "tags": [],
-    "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/1991.1a.1b.1c.jpg"
-  },
-  {
-    "id": "acd17617",
-    "path": "Historical -NS/2000. 1.pdf",
-    "folder": "Historical -NS",
-    "year": "2000",
-    "descriptor": "",
-    "tags": [],
-    "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2000. 1.jpg"
-  },
-  {
     "id": "bc7b7a9c",
-    "path": "Historical -NS/2025 -D25.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.25.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D25.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.25.jpg"
   },
   {
     "id": "9a4f13f4",
-    "path": "Historical -NS/2025 -D26.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.26.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D26.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.26.jpg"
   },
   {
     "id": "a9943c55",
-    "path": "Historical -NS/2025 -D35.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.35.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D35.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.35.jpg"
   },
   {
     "id": "8f4f9d3e",
-    "path": "Historical -NS/2025 -D36.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.36.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D36.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.36.jpg"
   },
   {
     "id": "d4068751",
-    "path": "Historical -NS/2025 -D37.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.37.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D37.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.37.jpg"
   },
   {
     "id": "2691c6f3",
-    "path": "Historical -NS/2025 -D38.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.38.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D38.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.38.jpg"
   },
   {
     "id": "b1e9e837",
-    "path": "Historical -NS/2025 -D39.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.39.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D39.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.39.jpg"
   },
   {
     "id": "4517f1fa",
-    "path": "Historical -NS/2025 -D40.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.40.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D40.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.40.jpg"
   },
   {
     "id": "7cd19c83",
-    "path": "Historical -NS/2025 -D41.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.41.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D41.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.41.jpg"
   },
   {
     "id": "50912ca2",
-    "path": "Historical -NS/2025 -D42.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.42.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D42.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.42.jpg"
   },
   {
     "id": "f038fa9d",
-    "path": "Historical -NS/2025 -D43.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.43.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D43.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.43.jpg"
   },
   {
     "id": "3b684bf7",
-    "path": "Historical -NS/2025 -D44.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.44.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D44.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.44.jpg"
   },
   {
     "id": "04c1ef01",
-    "path": "Historical -NS/2025 -D45.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.45.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D45.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.45.jpg"
   },
   {
     "id": "c706d1e3",
-    "path": "Historical -NS/2025 -D46.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.46.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D46.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.46.jpg"
   },
   {
     "id": "b0162e96",
-    "path": "Historical -NS/2025 -D47.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.47.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D47.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.47.jpg"
   },
   {
     "id": "21cc7518",
-    "path": "Historical -NS/2025 -D48.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.48.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D48.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.48.jpg"
   },
   {
     "id": "05bdd10c",
-    "path": "Historical -NS/2025 -D49.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.49.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D49.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.49.jpg"
   },
   {
     "id": "2ece8b08",
-    "path": "Historical -NS/2025 -D50.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.50.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D50.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.50.jpg"
   },
   {
     "id": "7fc26674",
-    "path": "Historical -NS/2025 -D51.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.51.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D51.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.51.jpg"
   },
   {
     "id": "c911c9f6",
-    "path": "Historical -NS/2025 -D52.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.52.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D52.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.52.jpg"
   },
   {
     "id": "566be13d",
-    "path": "Historical -NS/2025 -D53.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.53.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D53.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.53.jpg"
   },
   {
     "id": "e82aac3f",
-    "path": "Historical -NS/2025 -D54.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.54.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D54.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.54.jpg"
   },
   {
     "id": "f6158e94",
-    "path": "Historical -NS/2025 -D55.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.55.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D55.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.55.jpg"
   },
   {
     "id": "81cae2a9",
-    "path": "Historical -NS/2025 -D56.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.56.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D56.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.56.jpg"
   },
   {
     "id": "026e139f",
-    "path": "Historical -NS/2025 -D58.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.58.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D58.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.58.jpg"
   },
   {
     "id": "8f3ffe36",
-    "path": "Historical -NS/2025 -D59.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.59.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D59.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.59.jpg"
   },
   {
     "id": "c02a0cf5",
-    "path": "Historical -NS/2025 -D60.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.60.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D60.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.60.jpg"
   },
   {
     "id": "53c262e5",
-    "path": "Historical -NS/2025 -D61.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.61.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D61.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.61.jpg"
   },
   {
     "id": "838a20c1",
-    "path": "Historical -NS/2025 -D62.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.62.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D62.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.62.jpg"
   },
   {
     "id": "b4926b9f",
-    "path": "Historical -NS/2025 -D63.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.63.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D63.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.63.jpg"
   },
   {
     "id": "f4a0fd58",
-    "path": "Historical -NS/2025 -D64.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.64.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D64.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.64.jpg"
   },
   {
     "id": "dca2c4f3",
-    "path": "Historical -NS/2025 -D65.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.65.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D65.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.65.jpg"
   },
   {
     "id": "1ad9a62a",
-    "path": "Historical -NS/2025 -D66.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.66.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 -D66.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.66.jpg"
   },
   {
     "id": "c6bcf0ff",
-    "path": "Historical -NS/2025 D 17-.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.17 2.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D 17-.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.17 2.jpg"
   },
   {
     "id": "93e6b2e5",
-    "path": "Historical -NS/2025 D01.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.1.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D01.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.1.jpg"
   },
   {
     "id": "d74ff50a",
-    "path": "Historical -NS/2025 D02.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.2.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D02.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.2.jpg"
   },
   {
     "id": "aea7d10e",
-    "path": "Historical -NS/2025 D03.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.3.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D03.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.3.jpg"
   },
   {
     "id": "c5e2595e",
-    "path": "Historical -NS/2025 D04.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.4.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D04.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.4.jpg"
   },
   {
     "id": "f5673238",
-    "path": "Historical -NS/2025 D05.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.5.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D05.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.5.jpg"
   },
   {
     "id": "a26d700a",
-    "path": "Historical -NS/2025 D06.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.6.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D06.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.6.jpg"
   },
   {
     "id": "6e449de6",
-    "path": "Historical -NS/2025 D07.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.7.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D07.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.7.jpg"
   },
   {
     "id": "ecaced8d",
-    "path": "Historical -NS/2025 D072-073.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.72-73.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D072-073.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.72-73.jpg"
   },
   {
     "id": "4666c29a",
-    "path": "Historical -NS/2025 D074-075.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.74-75.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D074-075.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.74-75.jpg"
   },
   {
     "id": "dfe8d492",
-    "path": "Historical -NS/2025 D076-077.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.76-77.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D076-077.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.76-77.jpg"
   },
   {
     "id": "49beaaaf",
-    "path": "Historical -NS/2025 D078.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.78.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D078.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.78.jpg"
   },
   {
     "id": "ab08fa1b",
-    "path": "Historical -NS/2025 D079.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.79.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D079.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.79.jpg"
   },
   {
     "id": "07c7784b",
-    "path": "Historical -NS/2025 D08.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.8.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D08.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.8.jpg"
   },
   {
     "id": "72092773",
-    "path": "Historical -NS/2025 D080.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.80.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D080.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.80.jpg"
   },
   {
     "id": "64af9bb8",
-    "path": "Historical -NS/2025 D081-082.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.81-82.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D081-082.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.81-82.jpg"
   },
   {
     "id": "fade5161",
-    "path": "Historical -NS/2025 D083.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.83.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D083.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.83.jpg"
   },
   {
     "id": "3c696b61",
-    "path": "Historical -NS/2025 D084  2 of 2.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.84 2 of 2.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D084  2 of 2.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.84 2 of 2.jpg"
   },
   {
     "id": "582bd1f2",
-    "path": "Historical -NS/2025 D084.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.84.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D084.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.84.jpg"
   },
   {
     "id": "b686a4c5",
-    "path": "Historical -NS/2025 D085 1 of 2.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.85 1 of 2.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D085 1 of 2.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.85 1 of 2.jpg"
   },
   {
     "id": "33ccf67f",
-    "path": "Historical -NS/2025 D085 2 of 2.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.85 2 of 2.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D085 2 of 2.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.85 2 of 2.jpg"
   },
   {
     "id": "b396959c",
-    "path": "Historical -NS/2025 D086.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.86.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D086.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.86.jpg"
   },
   {
     "id": "94e830c3",
-    "path": "Historical -NS/2025 D087.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.87.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D087.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.87.jpg"
   },
   {
     "id": "7626ff35",
-    "path": "Historical -NS/2025 D088.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.88.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D088.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.88.jpg"
   },
   {
     "id": "19087149",
-    "path": "Historical -NS/2025 D09.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.9.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D09.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.9.jpg"
   },
   {
     "id": "49bdbb4f",
-    "path": "Historical -NS/2025 D10.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.10.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D10.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.10.jpg"
   },
   {
     "id": "0364904d",
-    "path": "Historical -NS/2025 D11.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.11.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D11.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.11.jpg"
   },
   {
     "id": "4356e5d9",
-    "path": "Historical -NS/2025 D12.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.12.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D12.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.12.jpg"
   },
   {
     "id": "c6b5e6f2",
-    "path": "Historical -NS/2025 D13.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.13.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D13.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.13.jpg"
   },
   {
     "id": "475b25e9",
-    "path": "Historical -NS/2025 D14.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.14.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D14.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.14.jpg"
   },
   {
     "id": "7506ef86",
-    "path": "Historical -NS/2025 D15.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.15.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D15.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.15.jpg"
   },
   {
     "id": "7e529b33",
-    "path": "Historical -NS/2025 D16.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.16.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D16.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.16.jpg"
   },
   {
     "id": "1995e6a2",
-    "path": "Historical -NS/2025 D17.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.17.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D17.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.17.jpg"
   },
   {
     "id": "ba3fb748",
-    "path": "Historical -NS/2025 D18.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.18.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D18.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.18.jpg"
   },
   {
     "id": "cd46c8ac",
-    "path": "Historical -NS/2025 D19.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.19.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D19.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.19.jpg"
   },
   {
     "id": "fa04e19a",
-    "path": "Historical -NS/2025 D20.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.20.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D20.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.20.jpg"
   },
   {
     "id": "e041b4ce",
-    "path": "Historical -NS/2025 D21-.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.21 2.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D21-.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.21 2.jpg"
   },
   {
     "id": "546e198e",
-    "path": "Historical -NS/2025 D21.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.21.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D21.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.21.jpg"
   },
   {
     "id": "4fa7f7e3",
-    "path": "Historical -NS/2025 D22.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.22.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D22.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.22.jpg"
   },
   {
     "id": "44a20165",
-    "path": "Historical -NS/2025 D23 SeaTerrace I.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.23 SeaTerrace I.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D23 SeaTerrace I.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.23 SeaTerrace I.jpg"
   },
   {
     "id": "d9e77c5b",
-    "path": "Historical -NS/2025 D23.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.23.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D23.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.23.jpg"
   },
   {
     "id": "bdcc52e3",
-    "path": "Historical -NS/2025 D24.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.24.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D24.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.24.jpg"
   },
   {
     "id": "fe17b370",
-    "path": "Historical -NS/2025 D27 (2).pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.27 (2).pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D27 (2).jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.27 (2).jpg"
   },
   {
     "id": "c8f1558b",
-    "path": "Historical -NS/2025 D27.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.27.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D27.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.27.jpg"
   },
   {
     "id": "77e1685a",
-    "path": "Historical -NS/2025 D28.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.28.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D28.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.28.jpg"
   },
   {
     "id": "b89c4723",
-    "path": "Historical -NS/2025 D29.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.29.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D29.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.29.jpg"
   },
   {
     "id": "cb8b5fe2",
-    "path": "Historical -NS/2025 D30.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.30.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D30.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.30.jpg"
   },
   {
     "id": "87ec0870",
-    "path": "Historical -NS/2025 D31.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.31.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D31.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.31.jpg"
   },
   {
     "id": "54228d16",
-    "path": "Historical -NS/2025 D32.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.32.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D32.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.32.jpg"
   },
   {
     "id": "aaa52d42",
-    "path": "Historical -NS/2025 D33.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.33.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D33.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.33.jpg"
   },
   {
     "id": "3089aee3",
-    "path": "Historical -NS/2025 D34.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.34.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025 D34.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.34.jpg"
   },
   {
     "id": "81d3a1b1",
-    "path": "Historical -NS/2025- D67.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.67.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025- D67.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.67.jpg"
   },
   {
     "id": "34d81fa3",
-    "path": "Historical -NS/2025- D68 (1).pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.68 (1).pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025- D68 (1).jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.68 (1).jpg"
   },
   {
     "id": "94126f28",
-    "path": "Historical -NS/2025- D68 (2).pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.68 (2).pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025- D68 (2).jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.68 (2).jpg"
   },
   {
     "id": "ba75de15",
-    "path": "Historical -NS/2025- D68.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.68.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025- D68.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.68.jpg"
   },
   {
     "id": "39c82f9b",
-    "path": "Historical -NS/2025- D70.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.70.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025- D70.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.70.jpg"
   },
   {
     "id": "7a716df7",
-    "path": "Historical -NS/2025-D56.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025-D56.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
@@ -951,8 +901,8 @@
   },
   {
     "id": "67364715",
-    "path": "Historical -NS/2025-D68.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025-D68.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
@@ -961,202 +911,12 @@
   },
   {
     "id": "0d90eee1",
-    "path": "Historical -NS/2025-D69.pdf",
-    "folder": "Historical -NS",
+    "path": "Historical_NS/2025.D.69.pdf",
+    "folder": "Historical_NS",
     "year": "2025",
     "descriptor": "",
     "tags": [],
     "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025-D69.jpg"
-  },
-  {
-    "id": "21f48d14",
-    "path": "Historical -NS/4th July, 1990 .pdf",
-    "folder": "Historical -NS",
-    "year": "1990",
-    "descriptor": "",
-    "tags": [],
-    "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/4th July, 1990 .jpg"
-  },
-  {
-    "id": "7c641db1",
-    "path": "Historical -NS/Art Show.pdf",
-    "folder": "Historical -NS",
-    "year": "",
-    "descriptor": "",
-    "tags": [],
-    "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/Art Show.jpg"
-  },
-  {
-    "id": "962799c6",
-    "path": "Historical -NS/Bluff 1973-2004.pdf",
-    "folder": "Historical -NS",
-    "year": "1973",
-    "descriptor": "",
-    "tags": [],
-    "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/Bluff 1973-2004.jpg"
-  },
-  {
-    "id": "160b325d",
-    "path": "Historical -NS/Document Log.pdf",
-    "folder": "Historical -NS",
-    "year": "",
-    "descriptor": "",
-    "tags": [],
-    "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/Document Log.jpg"
-  },
-  {
-    "id": "596dd25e",
-    "path": "Historical -NS/EM 1998.pdf",
-    "folder": "Historical -NS",
-    "year": "1998",
-    "descriptor": "",
-    "tags": [],
-    "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/EM 1998.jpg"
-  },
-  {
-    "id": "ebe9940c",
-    "path": "Historical -NS/Events Misc.pdf",
-    "folder": "Historical -NS",
-    "year": "",
-    "descriptor": "",
-    "tags": [],
-    "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/Events Misc.jpg"
-  },
-  {
-    "id": "594980a2",
-    "path": "Historical -NS/Garden Club-lobster dinner.pdf",
-    "folder": "Historical -NS",
-    "year": "",
-    "descriptor": "",
-    "tags": [],
-    "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/Garden Club-lobster dinner.jpg"
-  },
-  {
-    "id": "0dc92fa6",
-    "path": "Historical -NS/Halloween.pdf",
-    "folder": "Historical -NS",
-    "year": "",
-    "descriptor": "",
-    "tags": [],
-    "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/Halloween.jpg"
-  },
-  {
-    "id": "69c214e8",
-    "path": "Historical -NS/Interview Questions.pdf",
-    "folder": "Historical -NS",
-    "year": "",
-    "descriptor": "",
-    "tags": [],
-    "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/Interview Questions.jpg"
-  },
-  {
-    "id": "9301052d",
-    "path": "Historical -NS/Interview-Oral Consent Form.pdf",
-    "folder": "Historical -NS",
-    "year": "",
-    "descriptor": "",
-    "tags": [],
-    "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/Interview-Oral Consent Form.jpg"
-  },
-  {
-    "id": "a5a00da3",
-    "path": "Historical -NS/July 4th 1997.pdf",
-    "folder": "Historical -NS",
-    "year": "1997",
-    "descriptor": "",
-    "tags": [],
-    "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/July 4th 1997.jpg"
-  },
-  {
-    "id": "28dc47b0",
-    "path": "Historical -NS/July 4th 1998.pdf",
-    "folder": "Historical -NS",
-    "year": "1998",
-    "descriptor": "",
-    "tags": [],
-    "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/July 4th 1998.jpg"
-  },
-  {
-    "id": "e5a236ab",
-    "path": "Historical -NS/July 4th 1999.pdf",
-    "folder": "Historical -NS",
-    "year": "1999",
-    "descriptor": "",
-    "tags": [],
-    "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/July 4th 1999.jpg"
-  },
-  {
-    "id": "94a2d028",
-    "path": "Historical -NS/July 4th 2002.pdf",
-    "folder": "Historical -NS",
-    "year": "2002",
-    "descriptor": "",
-    "tags": [],
-    "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/July 4th 2002.jpg"
-  },
-  {
-    "id": "6d0a8052",
-    "path": "Historical -NS/July 4th 2003 .pdf",
-    "folder": "Historical -NS",
-    "year": "2003",
-    "descriptor": "",
-    "tags": [],
-    "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/July 4th 2003 .jpg"
-  },
-  {
-    "id": "6e401cb9",
-    "path": "Historical -NS/July 4th 2006.pdf",
-    "folder": "Historical -NS",
-    "year": "2006",
-    "descriptor": "",
-    "tags": [],
-    "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/July 4th 2006.jpg"
-  },
-  {
-    "id": "230aa8f3",
-    "path": "Historical -NS/NS Community Center.pdf",
-    "folder": "Historical -NS",
-    "year": "",
-    "descriptor": "",
-    "tags": [],
-    "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/NS Community Center.jpg"
-  },
-  {
-    "id": "0dabe274",
-    "path": "Historical -NS/Page 4.pdf",
-    "folder": "Historical -NS",
-    "year": "",
-    "descriptor": "",
-    "tags": [],
-    "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/Page 4.jpg"
-  },
-  {
-    "id": "b19084f9",
-    "path": "Historical -NS/SWG 1992 1993 1994.pdf",
-    "folder": "Historical -NS",
-    "year": "1992",
-    "descriptor": "",
-    "tags": [],
-    "createdAt": "2026-05-24T05:15:10.344426+00:00",
-    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/SWG 1992 1993 1994.jpg"
+    "previewUrl": "https://zoefried.github.io/nsca-archive/thumbnails/2025.D.69.jpg"
   }
 ]
